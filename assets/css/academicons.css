@@ -569,3 +569,9 @@ border-radius: .1em;
 .ai-inverse {
   color: #fff;
 }
+
+.author__avatar img {
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
