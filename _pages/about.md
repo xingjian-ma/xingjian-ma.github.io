@@ -13,6 +13,5 @@ My research interests include rerandomization in experimental design, covariate-
 
 Currently, I am working on:
 - Rerandomization methods for experimental design, including high-dimensional covariates and variable selection
-- R packages for rerandomization and correlated PFS/OS group sequential designs
 
 You can find my [CV](/files/Xingjian_Ma_CV.pdf), publications, and software on the navigation bar above.

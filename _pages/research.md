@@ -33,9 +33,3 @@ I worked with large-scale clinical and Medicare claims data, using survival anal
 Aug 2024 - Jun 2025, Connecticut Children's Medical Center; advised by Prof. Jun Yan
 
 I developed time-series forecasting methods for pediatric emergency department volume, combining Fourier-series harmonic regression, ARIMAX models, external public-API covariates, and rolling forecast evaluation.
-
-## Correlated PFS and OS Group Sequential Designs
-
-May 2026 - Aug 2026, Biostatistician Intern, Astellas Pharma
-
-I developed an event-driven group sequential design for correlated progression-free survival (PFS) and overall survival (OS) under the Fleischer model. The work included closed-form correlation calculations, efficacy and futility monitoring, gatekeeping power, and an R package with a Shiny interface for reproducible trial-design evaluation.
