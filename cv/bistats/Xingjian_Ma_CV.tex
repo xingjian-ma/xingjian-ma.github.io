@@ -1,0 +1,272 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{textcase}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\footskip}{0.5in}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\textbf{\small#1}} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{\vspace{-2pt}
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \multirow{2}{*}{{\Huge \scshape Xingjian Ma}}
+   & \href{mailto:xingjian.ma@uconn.edu}{xingjian.ma@uconn.edu} \\
+   & +1 (860) 634-1048 \\
+\end{tabular*}
+
+
+
+% \begin{center}
+%     {\Huge \scshape Xingjian Ma} \\ \vspace{1pt}
+%     \vspace{1pt}
+%     \small  \href{xingjian.ma@uconn.edu} {\raisebox{-0.2\height}\faEnvelope\  \underline{xingjian.ma@uconn.edu}} ~ 
+%     %\href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/username}}  ~
+%     %\href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/username}}
+%     \vspace{-8pt}
+% \end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Connecticut}{Sep 2024 -- Present}
+      {PhD Candidate in Statistics, Department of Statistics}{Storrs, CT, U.S.}
+    \resumeItemListStart
+        \resumeItem{\textit{Courses: Design of Experiments, Statistical Inference, Linear Models}}
+    \resumeItemListEnd
+      
+
+    \resumeSubheading
+      {Renmin University of China}{Sep 2022 -- Jun 2024}
+      {Master of Science in Applied Statistics, Institute of Statistics and Big Data}{Beijing, China}
+    \resumeItemListStart
+    \resumeItem{\textit{Courses: Clinical Trial Statistical Methodology, Causal Inference, Survival Analysis}}
+    \resumeItemListEnd
+
+    \resumeSubheading
+     {Xi'an Jiaotong University}{Sep 2018 -- Jun 2022}
+    {Bachelor of Economics in Finance, School of Economics and Finance}{Xi'an, China}
+    \resumeItemListStart
+    \resumeItem{\textit{Courses: Probability Theory, Mathematical Statistics, Econometrics}}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+%------RELEVANT COURSEWORK-------
+% \section{Selected Courses}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{2}
+%             \begin{itemize}[itemsep=-2pt, parsep=3pt]
+%                 \item \small Special Topics in Biostatistics (PhD Course) \hfill A 
+%                 \item Statistical Method in Biostatistics \hfill A  
+%                 \item Clinical Trial Methodology \hfill A
+%                 \item Data Science and Artificial Intelligence Agorithms \hfill A
+%                 \item Statistical Foundations of Data Science and Artificial Intelligence \hfill A
+%                 \item Deep Learning \hfill A
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+% \vspace{-10pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Astellas Pharma}{May 2026 -- Aug 2026}
+      {Biostatistician Intern}{Remote}
+      \resumeSubSubheading{Topic: Closed-Form Evaluation of Correlated PFS and OS Group Sequential Designs}{}
+      \resumeItemListStart
+        \resumeItem{Developed an event-driven group sequential design for correlated progression-free survival (PFS) and overall survival (OS) under the Fleischer model, supporting efficacy monitoring, futility stopping, and piecewise-uniform accrual.}
+        \resumeItem{Derived a closed-form joint correlation matrix for sequential PFS and OS log-rank statistics, established a multivariate-normal asymptotic approximation, and calculated boundaries in three scales (z-score, p-value, and hazard ratio), marginal power, and gatekeeping joint power.}
+        \resumeItem{Built an R package and integrated R Shiny application that automate trial-design specification, closed-form analysis, visualization, and Monte Carlo simulation-based validation, enabling efficient and reproducible design evaluation.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {Department of Public Health Sciences, UConn Health}{Sep 2025 -- Dec 2025}{Research Assistant}{Farmington, CT, U.S.}
+    \resumeSubSubheading{Topic: Longitudinal Analysis of Depression Outcomes in Large-Scale Medicare Claims Data}{}
+    \resumeItemListStart
+      \resumeItem{Processed 3 billion+ Medicare claim datasets using high-performance big-data tools in R, including \texttt{fst} and \texttt{data.table}, enabling efficient extraction and linkage of depression patient cohorts across multiple years.}
+      \resumeItem{Constructed a 2 million+ patient longitudinal cohort of Medicare beneficiaries with depression by integrating claims histories, chronic condition indicators, and demographic covariates.}
+      \resumeItem{Applied survival analysis methods to identify key clinical and demographic factors associated with the onset and progression of depression among Medicare patients.}
+\resumeItemListEnd
+
+    \resumeSubheading
+    {Center for Population Health, UConn Health}{Jan 2025 -- Jun 2025}{Research Assistant}{Farmington, CT, U.S.}
+    \resumeSubSubheading{Topic: Survival and Machine Learning Analysis of Suicide Risk Using Clinical Data}{}
+    \resumeItemListStart
+    \resumeItem{Analyzed 5 million+ patient records spanning multi-year clinical encounters. Engineered features from demographic covariates, ICD diagnostic codes, chronic conditions, and medication histories.}
+    \resumeItem{Compared logistic regression, Weibull and Cox proportional hazards models to quantify risk factors associated with suicide rates. Identified high-risk covariates based on model coefficients and hazard ratios.}
+    \resumeItem{Developed ML-based suicide risk prediction pipelines using Random Forest, SVM, and Neural Networks, achieving a 20\% improvement in AUC over baseline models and delivered model outputs as risk scores to support clinical decision-making workflows.}
+    \resumeItemListEnd
+      
+    \resumeSubheading{Connecticut Children's Medical Center}{Aug 2024 -- Jun 2025}{Research Assistant}{Hartford, CT, U.S.}
+      \resumeSubSubheading{Topic: Time-Series Forecasting of Emergency Department Patient Volume}{}
+      \resumeItemListStart
+        \resumeItem{Preprocessed and visualized emergency department census data from Connecticut Children's Medical Center, using heatmap calendar plots to reveal key periodic patterns and temporal trends in patient flow.}
+        \resumeItem{Collected external covariates (temperature, air pollution, water quality) from public APIs, integrated them with census data, and performed data merging for downstream modeling and analysis.}
+        \resumeItem{Utilized Fourier series to construct a harmonic dynamic regression model to estimate different periodic cycles, combined with an ARIMAX framework to model non-periodic short-term variations, improving MAE/MAPE/RMSE by 30\% over baseline time-series models.}
+        \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}, itemsep=-2pt]
+    \small \item
+     \textbf{Programming}{: R (dplyr, tidyverse, ggplot2); Python (Numpy, Pandas, PyTorch); Rcpp; SAS; MySQL; Git; Linux} \\
+     \item \textbf{Languages}{: Chinese(Native); English(Fluent - TOEFL: 100 (R28 L26 S22 W24))} \\
+    
+ \end{itemize}
+ \vspace{-10pt}
+
+
+%-----------INVOLVEMENT---------------
+% \section{Leadership \& Communication Experience}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Renmin University of China, Institute of Statistics and Big Data}{Sep 2023 -- Present}{Teaching Assistant of Course Clinical Trial Methodology}{Beijing, China}
+%             \resumeItemListStart
+%                 \resumeItem{Marked homework, registered grades, and answered questions from students}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+    
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Renmin University of China, Master of Applied Statistics Class}{Sep 2022 -- Present}{Class Monitor}{Beijing, China}
+%             \resumeItemListStart
+%                 \resumeItem{Collaborated with the class advisor to handle administrative affairs of the class.}
+%             \resumeItemListEnd
+        
+%     \resumeSubHeadingListEnd
+
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Renmin University of China, Institute of Statistics and Big Data}{Sep 2022 -- Sep 2023}{Sports Department Leader}{Beijing, China}
+%             \resumeItemListStart
+%                 \resumeItem{Organized sports activities throughout the entire department.}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+    
+\end{document}

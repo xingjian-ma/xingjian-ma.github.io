@@ -1,0 +1,278 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{ctex}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+%\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+%\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \multirow{2}{*}{{\Huge \scshape 马行鉴}}
+   & \href{mailto:masquerade1256@gmail.com}{masquerade1256@gmail.com} \\
+   & (+86) 18510713719 \\
+\end{tabular*}
+
+
+% \begin{center}
+%     {\Huge \scshape 马行鉴} \\ \vspace{1pt}
+%     \vspace{1pt}
+%     \small
+%     \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%     电话: (+86) 18510713719  &  邮箱: \href{mailto:masquerade1256@gmail.com}{masquerade1256@gmail.com}
+%     \end{tabular*}
+   
+    
+    
+%     %{\raisebox{-0.2\height}\faEnvelope\  \underline{masquerade1256@gmail.com}}
+
+%     %\href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/username}}  ~
+%     %\href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/username}}
+%     \vspace{-8pt}
+% \end{center}
+
+
+%-----------EDUCATION-----------
+\section{教育背景}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+      {康涅狄格大学}{预计2024年9月入学}
+      {统计学博士}{美国,康涅狄格州}
+    \resumeSubheading
+      {中国人民大学}{2022年9月至今}
+      {应用统计硕士,统计与大数据研究院}{中国,北京}
+    \resumeItemListStart
+    \resumeItem{\textit{GPA: 3.89/4.0; 排名: 5/30}}
+    \resumeItem{\textit{课程:生物统计分析方法;临床试验中的统计方法;生物统计专题(生存分析与因果推断)}}
+    \resumeItemListEnd
+    \resumeSubheading
+     {西安交通大学}{2018年9月 -- 2022年6月}
+    {金融学学士, 经济与金融学院}{中国,西安}
+    \resumeItemListStart
+    \resumeItem{\textit{课程:概率论与数理统计; 统计学; 多元回归分析}}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-15pt}
+%------RELEVANT COURSEWORK-------
+
+% \section{Selected Courses}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{2}
+%             \begin{itemize}[itemsep=-2pt, parsep=3pt]
+%                 \item \small Special Topics in Biostatistics (PhD Course) \hfill A 
+%                 \item Statistical Method in Biostatistics \hfill A  
+%                 \item Clinical Trial Methodology \hfill A
+%                 \item Data Science and Artificial Intelligence Agorithms \hfill A
+%                 \item Statistical Foundations of Data Science and Artificial Intelligence \hfill A
+%                 \item Deep Learning \hfill A
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+% \vspace{-10pt}
+
+%-----------EXPERIENCE-----------
+\section{科研经历}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {在多组不等分配比例的协变量自适应临床试验中平衡关键协变量}{2023年3月 -- 2024年4月}
+      {中国人民大学,统计与大数据研究院}{中国,北京}
+      \resumeItemListStart
+        \resumeItem{提出更一般化的多治疗组别、不等分配比例下的协变量自适应的临床试验随机化设计方案}
+        \resumeItem{研究此设计方案下协变量不平衡的大样本渐进正态性,并证明此方案相较其他方案在平衡协变量的效果最好}
+        \resumeItem{证明变量间相关性可以解释不可观测变量的部分方差,进而建议在随机化试验中平衡更广泛和更具代表性的协变量}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------PROJECTS-----------
+\section{项目经历}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading{\textbf{增龄过程中人体内在功能的变点分析} $|$ \emph{R}}{2022年10月 -- 2023年5月}  
+        \resumeItemListStart
+        \resumeItem{清洗、整理来自北京医院提供的病患内在功能数据,进行缺失值填补,并提供描述性统计分析}
+        \resumeItem{利用线性样条回归和牛顿迭代算法计算增龄过程中的内在功能变点,并对比多变量的不同分层回归结果}
+        \resumeItem{利用立方样条回归对内在功能变点进行辅助验证,绘制含变点,置信区间的图表结果}
+        \resumeItem{同北京医院的专业医生对上述结果进行合作讨论,结合医学理论、临床观察与统计学证据得到最终结果}
+        \resumeItemListEnd
+          %\vspace{-13pt}
+        
+        \resumeProjectHeading
+          {\textbf{协变量自适应的成组序贯临床试验设计} $|$ \emph{R}}{2022年11月}
+          \resumeItemListStart
+            \resumeItem{根据不同的$\alpha$分配函数(Pocock, O'Brian-Fleming等)计算各阶段的预期样本量,进行初步的期中分析方案设计}
+            \resumeItem{纳入协变量进行多元回归分析来辅助估计治疗效应的方差, 进一步优化期中分析的效率并减少预期样本量}
+            \resumeItem{进行数值模拟实验,对比不同$\alpha$分配函数和协变量回归方式下的临床试验检验效率,以得到最优的试验设计方案}
+          \resumeItemListEnd
+          %\vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{利用深度学习和强化学习解决Wordle字谜游戏} $|$ \emph{Python (PyTorch)}}{2022年12月}
+          \resumeItemListStart
+            \resumeItem{使用卷积神经网络VggNet和ResNet提取游戏画面,进行图像切割和数据清洗整理得到游戏基础状态数据}
+            \resumeItem{定义奖励函数,利用强化学习\textit{Q learning}算法基于状态数据训练模型,并最终破解字谜}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+\section{荣誉奖励}
+\begin{itemize}[leftmargin=0.15in, itemsep=-2pt]
+    \small 
+    \item 中国人民大学校级优秀毕业生,中国人民大学 \hfill \textbf{2024年4月} \\
+    \item 华为奖学金(研究生学习优秀一等奖学金),中国人民大学 \hfill \textbf{2023年11月} \\
+     \item 优秀班团骨干奖学金,中国人民大学 \hfill \textbf{2023年10月} \\
+     \item 优秀班团干部荣誉称号,中国人民大学 \hfill \textbf{2023年10月} \\
+ \end{itemize}
+ \vspace{-15pt}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{专业技能}
+ \begin{itemize}[leftmargin=0.15in, label={}, itemsep=-2pt]
+    \small 
+    \item \textbf{编程}{: R(dplyr, tidyverse, ggplot2); Rcpp; Python(Numpy, Pandas, PyTorch); SPSS; SAS; Git} \\
+     \item \textbf{英语}{: TOEFL iBT MyBest: 100 (R28 L26 S22 W24)}; 六级: 549 \\
+    
+ \end{itemize}
+ \vspace{-10pt}
+
+
+%-----------INVOLVEMENT---------------
+% \section{Leadership \& Communication Experience}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Renmin University of China, Institute of Statistics and Big Data}{Sep 2023 -- Present}{Teaching Assistant of Course Clinical Trial Methodology}{Beijing, China}
+%             \resumeItemListStart
+%                 \resumeItem{Marked homework, registered grades, and answered questions from students}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+    
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Renmin University of China, Master of Applied Statistics Class}{Sep 2022 -- Present}{Class Monitor}{Beijing, China}
+%             \resumeItemListStart
+%                 \resumeItem{Collaborated with the class advisor to handle administrative affairs of the class.}
+%             \resumeItemListEnd
+        
+%     \resumeSubHeadingListEnd
+
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Renmin University of China, Institute of Statistics and Big Data}{Sep 2022 -- Sep 2023}{Sports Department Leader}{Beijing, China}
+%             \resumeItemListStart
+%                 \resumeItem{Organized sports activities throughout the entire department.}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+    
+\end{document}

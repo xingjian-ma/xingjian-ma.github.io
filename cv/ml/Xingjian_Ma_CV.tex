@@ -1,0 +1,292 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{textcase}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\footskip}{4.08003pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{\vspace{-2pt}
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \multirow{2}{*}{{\Huge \scshape Xingjian Ma}}
+   & \href{mailto:xingjian.ma@uconn.edu}{xingjian.ma@uconn.edu} \\
+   & 860-634-1048 \\
+\end{tabular*}
+
+
+
+% \begin{center}
+%     {\Huge \scshape Xingjian Ma} \\ \vspace{1pt}
+%     \vspace{1pt}
+%     \small  \href{xingjian.ma@uconn.edu} {\raisebox{-0.2\height}\faEnvelope\  \underline{xingjian.ma@uconn.edu}} ~ 
+%     %\href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/username}}  ~
+%     %\href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/username}}
+%     \vspace{-8pt}
+% \end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Connecticut}{Sep 2024 -- Present}
+      {PhD Student in Statistics, Department of Statistics}{Storrs, CT, U.S.}
+    \resumeItemListStart
+        \resumeItem{\textit{Courses: Design of Experiments, Statistical Inference, Linear Models}}
+    \resumeItemListEnd
+      
+
+    \resumeSubheading
+      {Renmin University of China}{Sep 2022 -- Jun 2024}
+      {Master of Science in Applied Statistics, Institute of Statistics and Big Data}{Beijing, China}
+    \resumeItemListStart
+    \resumeItem{\textit{Courses: Machine Learning, Deep Learning, Data Mining}}
+    \resumeItemListEnd
+
+    \resumeSubheading
+     {Xi'an Jiaotong University}{Sep 2018 -- Jun 2022}
+    {Bachelor of Economics in Finance, School of Economics and Finance}{Xi'an, China}
+    \resumeItemListStart
+    \resumeItem{\textit{Courses: Probability Theory, Mathematical Statistics, Econometrics}}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-15pt}
+%------RELEVANT COURSEWORK-------
+% \section{Selected Courses}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{2}
+%             \begin{itemize}[itemsep=-2pt, parsep=3pt]
+%                 \item \small Special Topics in Biostatistics (PhD Course) \hfill A 
+%                 \item Statistical Method in Biostatistics \hfill A  
+%                 \item Clinical Trial Methodology \hfill A
+%                 \item Data Science and Artificial Intelligence Agorithms \hfill A
+%                 \item Statistical Foundations of Data Science and Artificial Intelligence \hfill A
+%                 \item Deep Learning \hfill A
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+% \vspace{-10pt}
+
+%-----------EXPERIENCE-----------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {Center for Population Health, UConn Health}{Jan 2025 -- Jun 2025}{Machine Learning Researcher}{Farmington, CT, U.S.}
+    \resumeItemListStart
+    \resumeItem{Analyzed hospital data using data mining techniques to identify factors influencing suicide rates, leveraging patient demographics and clinical records through Weibull Cox proportional hazards model and logistic regression model.}
+    \resumeItem{Employed multiple machine learning techniques, including Random Forest, SVM, and Neural Networks, to predict suicide rates and improve forecasting accuracy.}
+    \resumeItem{Achieved state-of-the-art performance in suicide risk prediction, significantly outperforming baseline models and contributing to improved clinical decision-making.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Connecticut Children's Medical Center}{Aug 2024 -- Dec 2024}
+      {Research Assistant}{Hartford, CT, U.S.}
+      \resumeItemListStart
+        \resumeItem{Preprocessed and integrated a decade of emergency department census data from Connecticut Children's Medical Center, incorporating external covariates such as temperature, air pollution, and water quality.}
+        \resumeItem{Utilized Fourier series to construct a harmonic dynamic regression model to accurately estimate fixed fluctuations across different cycles, and combined this with an ARIMAX framework to model non-periodic short-term variations using external variables, achieving effective forecasting performance.}
+      \resumeItemListEnd
+    
+       \resumeSubheading
+      {Institute of Geriatric Medicine, Beijing Hospital}{Oct 2022 – May 2023}
+      {Research Assistant}{Beijing, China}
+      \resumeItemListStart
+        \resumeItem{Streamlined and preprocessed Beijing Hospital’s raw data to support the analysis of population aging trends.}
+        \resumeItem{Estimated knots in linear spline models using the Newton-Raphson algorithm, specifically tailored to capture critical shifts related to the aging process.}
+        \resumeItem{Developed advanced plotting functions to visually validate results and engaged in thorough consultations with hospital doctors, ensuring a robust integration of statistical findings with clinical experiences.}
+        % \resumeItem{The theoretical foundation derives from \href{https://www.tandfonline.com/doi/abs/10.1080/01621459.2021.1947307}{\textit{Estimation of Knots in Linear Spline Models}} and all codes are written in R.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+      {\textbf{Parkinson's Disease Progression Prediction} $|$ \emph{Python}}{May 2023 -- Jun 2023}
+      \resumeItemListStart
+        \resumeItem{Engineered time-aware clinical features from high-dimensional proteomic data, reducing 1,200+ variables to 25 informative predictors, enhancing model interpretability and performance.}
+        \resumeItem{Developed a hybrid model combining LightGBM (multi-class classification) and a neural network and applied strict time-series cross-validation to ensure robust generalization on future patient visits.}
+        \resumeItem{Made a data-driven decision to exclude proteomic blood assays when signal was weak—streamlining model complexity and improving interpretability.}
+      \resumeItemListEnd
+          %\vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Deep Reinforcement Learning} $|$ \emph{Python (PyTorch)}}{Oct 2022 -- Dec 2022}
+          \resumeItemListStart
+            \resumeItem{Developed AI-driven algorithms employing CNN architectures (e.g., AlexNet, VggNet, ResNet) for enhanced interactive game image analysis, incorporating data augmentation and transfer learning techniques to boost model robustness.}
+            \resumeItem{Utilized reinforcement learning strategies, specifically the Q-learning algorithm, to continuously train and refine the model based on dynamic game scenarios, resulting in improved decision-making and adaptability.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+\section{Honors \& Awards}
+\begin{itemize}[leftmargin=0.15in, itemsep=-2pt]
+    \small 
+    \item Outstanding Graduate of Renmin University of China \hfill \textbf{Apr 2024} \\
+    \item Graduate Excellent First Class Scholarship, Renmin University of China \hfill \textbf{Oct 2023} \\
+     \item Honorary Title of Outstanding Student Cadre, Renmin University of China\hfill \textbf{Oct 2023} \\
+    
+ \end{itemize}
+ \vspace{-15pt}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}, itemsep=-2pt]
+    \small \item
+     \textbf{Programming}{: R (dplyr, tidyverse, ggplot2); Python (Numpy, Pandas, PyTorch); Rcpp; SAS; Git; Linux} \\
+     \item \textbf{Languages}{: Chinese(Native); English(Fluent - TOEFL: 100 (R28 L26 S22 W24))} \\
+    
+ \end{itemize}
+ \vspace{-10pt}
+
+
+%-----------INVOLVEMENT---------------
+% \section{Leadership \& Communication Experience}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Renmin University of China, Institute of Statistics and Big Data}{Sep 2023 -- Present}{Teaching Assistant of Course Clinical Trial Methodology}{Beijing, China}
+%             \resumeItemListStart
+%                 \resumeItem{Marked homework, registered grades, and answered questions from students}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+    
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Renmin University of China, Master of Applied Statistics Class}{Sep 2022 -- Present}{Class Monitor}{Beijing, China}
+%             \resumeItemListStart
+%                 \resumeItem{Collaborated with the class advisor to handle administrative affairs of the class.}
+%             \resumeItemListEnd
+        
+%     \resumeSubHeadingListEnd
+
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Renmin University of China, Institute of Statistics and Big Data}{Sep 2022 -- Sep 2023}{Sports Department Leader}{Beijing, China}
+%             \resumeItemListStart
+%                 \resumeItem{Organized sports activities throughout the entire department.}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+    
+\end{document}
