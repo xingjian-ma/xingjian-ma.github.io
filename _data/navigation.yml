@@ -9,6 +9,8 @@
 main:
   - title: "Home"
     url: /
+  - title: "CV"
+    url: /files/Xingjian_Ma_CV.pdf
   - title: "Research"
     url: /research/
   - title: "Education"

@@ -9,6 +9,7 @@ redirect_from:
 ---
 
 I am a Ph.D. Candidate in Statistics at the University of Connecticut, advised by Prof. Haiying Wang and Prof. Jun Yan.
+
 My research interests include rerandomization in experimental design, covariate-adaptive randomization, group sequential designs, survival analysis, and applications in clinical trials.
 
 Currently, I am working on:
